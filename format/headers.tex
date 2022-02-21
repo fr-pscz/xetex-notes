@@ -1,0 +1,48 @@
+% 1 :: CHAPTER TITLE
+%%%%%%%%%%%%
+\makeatletter
+\def\@makechapterhead#1{%
+  \vspace*{10\p@}%
+  {\parindent \z@ \normalfont
+     \LARGE \bfseries \thechapter ::\huge\color{emphclr}\MakeUppercase{#1}\par\nobreak
+    \vskip 40\p@
+  }}
+\makeatother
+
+% 1::A Section title
+%%%%%%%%%%%%
+\renewcommand\thesection{\color{textclr}\large\arabic{chapter}::\large\Alph{section}}
+\makeatletter
+\renewcommand\section{\@startsection {section}{1}{\z@}%
+                                   {-3.5ex \@plus -1ex \@minus -.2ex}%
+                                   {2.3ex \@plus.2ex}%
+                                   {\normalfont\color{emphclr}\Large\bfseries}}
+\makeatother
+
+% HEADER   1
+%%%%%%%%%%%%
+\usepackage{fancyhdr}
+\renewcommand{\chaptermark}[1]{%
+\markboth{#1}{}}
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{\color{commclr}\MakeUppercase{\leftmark}}
+\rhead{\color{commclr}\thepage}
+\chead{}
+\lfoot{}
+\cfoot{}
+\rfoot{}
+
+
+\let\oldheadrule\headrule
+\renewcommand{\headrule}{\color{commclr}\oldheadrule}
+\renewcommand{\headrulewidth}{1.5pt}
+
+% Equations
+%%%%%%%%%%%%
+\let\oldeq\equation
+\def\equation{\oldeq\color{emphclr}}
+
+\makeatletter
+\def\tagform@#1{\maketag@@@{\color{commclr}[\ignorespaces#1\unskip\@@italiccorr]}}
+\makeatother

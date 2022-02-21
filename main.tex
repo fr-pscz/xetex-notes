@@ -1,0 +1,66 @@
+\documentclass[oneside]{book}
+
+% PACKAGES
+%%%%%%%%%%%%%%%%
+
+\usepackage{fontspec}
+\usepackage[table]{xcolor}
+\usepackage{amsmath,amsfonts,amssymb}
+\usepackage{colortbl}
+\usepackage{tcolorbox}
+
+
+% COLORS
+%%%%%%%%%%%%%%%%
+
+\definecolor{pageclr}{RGB}{16, 19, 28}
+\definecolor{textclr}{RGB}{190, 194, 192}
+\definecolor{emphclr}{RGB}{255, 255, 255}
+\definecolor{alphclr}{RGB}{27, 33, 41}
+\definecolor{commclr}{RGB}{88, 110, 117}
+\definecolor{discclr}{RGB}{55, 62, 71}
+\definecolor{goldclr}{RGB}{209, 174, 48}
+\definecolor{tintclr}{RGB}{244, 234, 207}
+\definecolor{prosclr}{RGB}{70, 156, 89}
+\definecolor{consclr}{RGB}{219, 55, 63}
+
+\definecolor{thmbackground}{RGB}{36, 36, 35}
+
+% FORMAT
+%%%%%%%%%%%%%%%%
+
+\setmainfont[Path=./fonts/]{iosevka-aile-regular.ttf}[
+	BoldFont       = iosevka-aile-bold.ttf,
+	ItalicFont     = iosevka-aile-italic.ttf,
+	BoldItalicFont = iosevka-aile-bolditalic.ttf ]
+\setsansfont[Path=./fonts/]{iosevka-aile-regular.ttf}[
+	BoldFont       = iosevka-aile-bold.ttf,
+	ItalicFont     = iosevka-aile-italic.ttf,
+	BoldItalicFont = iosevka-aile-bolditalic.ttf ]
+\setmonofont[Path=./fonts/]{iosevka-term-regular.ttf}[
+	BoldFont       = iosevka-term-bold.ttf,
+	ItalicFont     = iosevka-term-italic.ttf,
+	BoldItalicFont = iosevka-term-bolditalic.ttf ]
+
+\setlength\parindent{0pt}
+\setlength\parskip{8pt}
+\input{format/environs.tex}
+\input{format/headers.tex}
+
+\rowcolors{1}{alphclr}{alphclr}
+\reversemarginpar
+\newcommand{\mnote}[1]{\marginpar{\color{commclr}#1}}
+
+
+% DOCUMENT
+%%%%%%%%%%%%%%%%
+
+\begin{document}
+\pagecolor{pageclr}
+\color{textclr}
+
+%^^ INPUT ^^%
+%^^ INPUT ^^%
+
+
+\end{document}
