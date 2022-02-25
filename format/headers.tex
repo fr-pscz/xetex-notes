@@ -43,6 +43,8 @@
 \let\oldeq\equation
 \def\equation{\oldeq\color{emphclr}}
 
+\everymath{\color{emphclr}}
+
 \makeatletter
 \def\tagform@#1{\maketag@@@{\color{commclr}[\ignorespaces#1\unskip\@@italiccorr]}}
 \makeatother
