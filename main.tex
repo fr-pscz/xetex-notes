@@ -7,8 +7,9 @@
 \usepackage[table]{xcolor}
 \usepackage{amsmath,amsfonts,amssymb}
 \usepackage{colortbl}
+\usepackage{graphicx}
 \usepackage{tcolorbox}
-
+\usepackage[mathrm=sym]{unicode-math}
 
 % COLORS
 %%%%%%%%%%%%%%%%
@@ -42,6 +43,8 @@
 	ItalicFont     = iosevka-term-italic.ttf,
 	BoldItalicFont = iosevka-term-bolditalic.ttf ]
 
+\setmathrm{Latin Modern Math}
+
 \setlength\parindent{0pt}
 \setlength\parskip{8pt}
 \input{format/environs.tex}
@@ -60,6 +63,7 @@
 \color{textclr}
 
 %↓↓ INPUT ↓↓%
+\input{chapters/A.tex}
 %↑↑ INPUT ↑↑%
 
 
